@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">LumiVoice Media</title>
+  <defs>
+    <linearGradient id="brandGlow" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="50%" stop-color="#7657ff"/>
+      <stop offset="100%" stop-color="#e8e2ff"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#2a1b71" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="120" height="120" rx="28" fill="url(#brandGlow)"/>
+  
+  <g fill="#ffffff" filter="url(#dropShadow)">
+    <circle cx="45" cy="60" r="14" />
+    <path d="M 62 43 A 24 24 0 0 1 62 77" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 73 32 A 40 40 0 0 1 73 88" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>
