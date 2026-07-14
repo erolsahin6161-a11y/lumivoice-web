@@ -4,8 +4,8 @@ LUMIVOICE MEDIA WEBSITE
 Overview
 --------
 Static corporate website for LumiVoice Media. The site is written in English and
-uses plain HTML, CSS, and JavaScript with no framework, backend, analytics, or
-online form.
+uses plain HTML, CSS, and JavaScript with no framework, backend, or online form.
+Privacy-friendly visitor analytics are provided by Umami when configured.
 
 Pages and public files
 ----------------------
@@ -17,6 +17,7 @@ Pages and public files
 - sitemap.xml
 - assets/styles.css
 - assets/script.js
+- assets/analytics.js
 - assets/favicon.svg
 - assets/social-card.png
 
@@ -38,12 +39,21 @@ Social links
 No social media accounts are published in the interface until the account URLs
 have been independently confirmed as official LumiVoice Media profiles.
 
+Analytics
+---------
+Umami page-view tracking is loaded on every page through assets/analytics.js.
+Tracking remains disabled while websiteId is empty. To enable it, copy the
+website ID and script URL from Umami's Website settings > Tracking code into the
+config object at the top of that file. The tracker is restricted to
+lumivoicemedia.com and www.lumivoicemedia.com and respects Do Not Track.
+
 Privacy assumptions
 -------------------
 The included privacy text describes this version of the site: static pages,
-local fonts, no analytics, no advertising cookies, no accounts, and no web form.
-Review the policy whenever hosting, analytics, forms, embeds, or other data
-processing changes. Company-specific legal review remains recommended.
+local fonts, cookieless Umami analytics, no advertising cookies, no accounts,
+and no web form. Review the policy whenever hosting, analytics configuration,
+forms, embeds, or other data processing changes. Company-specific legal review
+remains recommended.
 
 Deployment
 ----------
