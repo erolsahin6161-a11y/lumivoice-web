@@ -12,6 +12,9 @@ Pages and public files
 - index.html
 - support.html
 - privacy-policy.html
+- hatip/support/index.html
+- hatip/privacy/index.html
+- hatip/terms/index.html
 - 404.html
 - robots.txt
 - sitemap.xml
