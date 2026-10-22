@@ -12,9 +12,11 @@ Pages and public files
 - index.html
 - support.html
 - privacy-policy.html
+- hatip/index.html
 - hatip/support/index.html
 - hatip/privacy/index.html
 - hatip/terms/index.html
+- hatip/data-deletion/index.html
 - 404.html
 - robots.txt
 - sitemap.xml
@@ -31,6 +33,38 @@ Website: https://lumivoicemedia.com
 
 All project and support inquiries use email links. The site states an intended
 response time of 1–2 business days.
+
+Hatip store and review links
+---------------------------
+Website / marketing: https://lumivoicemedia.com/hatip/
+Support: https://lumivoicemedia.com/hatip/support/
+Privacy policy: https://lumivoicemedia.com/hatip/privacy/
+Terms: https://lumivoicemedia.com/hatip/terms/
+Data deletion instructions: https://lumivoicemedia.com/hatip/data-deletion/
+App Store: https://apps.apple.com/app/hatip/id6804464530
+Android package: com.lumivoicemedia.hatip
+Google Play: https://play.google.com/store/apps/details?id=com.lumivoicemedia.hatip
+
+The existing support, privacy and terms URLs remain unchanged for store listings
+and in-app links. All Hatip pages now cover both iOS and Android.
+
+As of 22 October 2026, the Android app is in Google Play review and its public
+listing returns HTTP 404. The Hatip page shows the review status without sending
+visitors to an unavailable listing. After approval and public release, verify
+the Google Play URL, replace the review card with a download link, and update
+the review wording in the page's Open Graph and Twitter descriptions.
+
+Use the app-specific privacy URL in Play Console, not the corporate website
+privacy policy. The data deletion page is an optional resource for local data
+and support-email deletion; Hatip's existing policy states that no user accounts
+are created. Do not describe it as an account-deletion service.
+
+This repository contains the website only. The privacy text retains the
+existing app data-practice declarations; the Android permissions, SDKs, network
+security and Play Console Data safety answers must be verified against the
+Android app source before treating those declarations as a completed app audit.
+Store links entered in Play Console or shipped inside the app are not editable
+from this repository. New pages and edits go live only after site deployment.
 
 Fonts and licensing
 -------------------
