@@ -1552,10 +1552,6 @@ textarea {
   color: rgba(255, 255, 255, 0.68);
 }
 
-.support-card p + a {
-  margin-top: 22px;
-}
-
 .support-details {
   padding: 0 0 110px;
 }
@@ -1689,3 +1685,268 @@ textarea {
   .hero h1 {
     font-size: clamp(2.9rem, 14vw, 4rem);
   }
+
+/* Hatip app page */
+.hatip-hero {
+  overflow: hidden;
+  padding-bottom: 90px;
+}
+
+.hatip-hero-grid {
+  grid-template-columns: 1.05fr 0.95fr;
+}
+
+.hatip-title-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.hatip-app-icon {
+  width: clamp(64px, 9vw, 96px);
+  height: auto;
+  border-radius: 24%;
+  box-shadow: 0 16px 40px rgba(16, 24, 39, 0.2);
+}
+
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+  min-height: 60px;
+  padding: 9px 22px 9px 18px;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  background: #0b0f19;
+  box-shadow: 0 14px 34px rgba(16, 24, 39, 0.18);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background-color 0.22s ease;
+}
+
+.store-badge:hover,
+.store-badge:focus-visible {
+  transform: translateY(-3px);
+  background: #000000;
+  box-shadow: 0 18px 42px rgba(118, 87, 255, 0.28);
+}
+
+.store-badge .store-logo {
+  flex: none;
+  width: 30px;
+  height: 30px;
+}
+
+.store-badge span {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.store-badge small {
+  font-size: 0.72rem;
+  opacity: 0.8;
+}
+
+.store-badge strong {
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+
+.hatip-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hatip-highlights li {
+  padding: 7px 14px;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.hatip-phones {
+  position: relative;
+  min-height: 560px;
+}
+
+.hatip-phones::before {
+  content: "";
+  position: absolute;
+  inset: 8% 4% 6%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(107, 224, 231, 0.45), transparent 55%),
+    radial-gradient(circle at 70% 70%, rgba(118, 87, 255, 0.4), transparent 60%);
+  filter: blur(30px);
+}
+
+.hatip-phone {
+  position: absolute;
+  width: 250px;
+  padding: 9px;
+  border-radius: 42px;
+  background: #0b0f19;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 30px 80px rgba(16, 24, 39, 0.35);
+}
+
+.hatip-phone img {
+  width: 100%;
+  height: auto;
+  border-radius: 33px;
+}
+
+.hatip-phone-front {
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-28%);
+}
+
+.hatip-phone-back {
+  top: 46px;
+  left: 50%;
+  transform: translateX(-88%) rotate(-7deg) scale(0.9);
+  opacity: 0.92;
+}
+
+.hatip-platforms {
+  padding: 30px 0 90px;
+}
+
+.hatip-platforms h2 {
+  margin: 0 0 36px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.hatip-platform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.hatip-platform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.hatip-platform-logo {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+  border-radius: 18px;
+  background: var(--paper);
+}
+
+.hatip-platform-logo .store-logo {
+  width: 34px;
+  height: 34px;
+}
+
+.hatip-platform-logo-ios {
+  color: var(--ink);
+}
+
+.hatip-platform-label {
+  color: var(--violet);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.hatip-platform h3 {
+  margin: 10px 0 10px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.035em;
+}
+
+.hatip-platform p {
+  margin: 0 0 28px;
+  color: var(--muted);
+}
+
+.hatip-platform .store-badge {
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .hatip-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hatip-phones {
+    min-height: 470px;
+  }
+
+  .hatip-phone {
+    width: 210px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hatip-platform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hatip-platform {
+    padding: 28px;
+  }
+
+  .store-badges .store-badge {
+    flex: 1 1 200px;
+  }
+
+  .hatip-phones {
+    min-height: 400px;
+  }
+
+  .hatip-phone {
+    width: 180px;
+    padding: 7px;
+    border-radius: 32px;
+  }
+
+  .hatip-phone img {
+    border-radius: 26px;
+  }
+
+  .hatip-phone-front {
+    transform: translateX(-15%);
+  }
+
+  .hatip-phone-back {
+    transform: translateX(-85%) rotate(-7deg) scale(0.9);
+  }
+}
